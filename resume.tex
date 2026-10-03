@@ -1,0 +1,73 @@
+%-------------------------
+% Resume in LaTeX
+% Raghav Mittal
+% Base template: Audric Serador (MIT), inspired by github.com/sb2nov/resume
+% Build: tectonic resume.tex
+%-------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{needspace}
+
+% ATS glyph mapping: pdfTeX-only primitives, guarded so the file also
+% compiles under XeTeX/LuaTeX (tectonic). XeTeX emits Unicode natively.
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+\fi
+
+% Custom font
+\usepackage[default]{lato}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.15in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+% ATS-parsable output
+\ifPDFTeX
+  \pdfgentounicode=1
+\fi
+
+% Custom commands (preamble, via \input so no \clearpage is emitted)
+\input{custom-commands}
+
+\begin{document}
+
+\input{src/heading}
+\input{src/summary}
+\input{src/ai}
+\input{src/experience}
+\input{src/projects}
+\input{src/additional}
+
+\end{document}

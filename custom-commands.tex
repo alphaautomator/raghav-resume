@@ -1,0 +1,88 @@
+%-------------------------%
+% Custom commands
+% Note: no space before \vspace, and % guards on every line end.
+% A trailing space here makes a full-width bullet wrap onto an empty line.
+\newcommand{\resumeItem}[1]{%
+  \item\small{#1}%
+  \vspace{-2pt}%
+}
+
+\newcommand{\resumeItemnew}[1]{%
+  \item\small{#1}%
+  \vspace{-6pt}%
+}
+
+\newcommand{\resumeItemHead}[1]{
+  \textbf{#1} \vspace{-8pt}
+}
+
+\newcommand{\resumeCustomItem}[1]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}
+    \end{tabular*}\vspace{-3pt}
+}
+
+
+\newcommand{\resumeCustomItemOne}{\vspace{4pt}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingnew}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{0pt}
+}
+
+% \newcommand{\resumeSubheadingNew}[4]{
+%   \vspace{-2pt}\item
+%     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       {\textbf{#1} $|$ #3 $|$ #4} & #2 \\
+%       % \textit{\small#3} & \textit{\small #4} \\
+%     \end{tabular*}\vspace{-7pt}
+% }
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\definecolor{Black}{RGB}{0, 0, 0}
+\newcommand{\seticon}[1]{\textcolor{Black}{\csname #1\endcsname}}
+% --- Project-block layout (bold title + one-line summary, then bullets) ---
+\newcommand{\resumeBlockListStart}{\begin{itemize}[leftmargin=0.05in,label={},itemsep=0pt,topsep=3pt,parsep=0pt]}
+\newcommand{\resumeBlockListEnd}{\end{itemize}}
+\newcommand{\resumeBlock}[2]{\needspace{4\baselineskip}\vspace{4pt}\item\small{\textbf{#1:} #2}\vspace{-1pt}}
+\newcommand{\resumeLead}[1]{\item\small{#1}\vspace{0pt}}
+\newcommand{\resumeBlockItemListStart}{\begin{itemize}[leftmargin=0.18in,label=\textbullet,itemsep=1pt,topsep=2pt,parsep=0pt]}
+\newcommand{\resumeBlockItemListEnd}{\end{itemize}\vspace{1pt}}
+% Block list used directly under a section (no \resumeSubheading above it)
+\newcommand{\resumeTopBlockListStart}{\begin{itemize}[leftmargin=0.15in,label={},itemsep=0pt,topsep=3pt,parsep=0pt]}
+% Block with a small provenance tag after the title: \resumeBlockT{Title}{tag}{summary}
+\newcommand{\resumeBlockT}[3]{\needspace{4\baselineskip}\vspace{3pt}\item\small{\textbf{#1} {\footnotesize\textit{[#2]}}\textbf{:} #3}\vspace{-2pt}}

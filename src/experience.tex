@@ -1,0 +1,39 @@
+%-----------EXPERIENCE-----------%
+\section{EXPERIENCE}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Alpha Nodus --- Software Development Engineer II}{Jan 2026 -- Present}
+    {Backend Systems \& Architecture}{Bengaluru, India}
+
+    \resumeBlockListStart
+
+    \resumeBlock{Service Agents}{Designed and led the platform's service-agents toolkit --- any service can run a long-lived agent with checkpointed threads and human-in-the-loop interrupts (pause for approval, resume by API). Four agents run on it: support, order and document chat, and scheduled log triage.}
+
+    \resumeBlock{Outbound Event Delivery System}{Designed and built the event fan-out layer that delivers domain events to customers' systems with per-entity ordering, retry tracking and a declarative routing DSL; a single large tenant pushes \textbf{250K+ events a month} through it.}
+
+    \resumeBlock{Third-Party Integration Platform}{Owned the integration codebase for \textbf{45+ tenants} across five vendor platforms --- per-tenant serverless stacks from one codebase, reusable templates, a shared handler package; stood up 6 new customer integrations in 2026 and took them live.}
+
+    \resumeBlock{Tenant Cloner}{Built, in two weeks, a hosted service that clones a production tenant's configuration through the public API --- idempotent, resumable runs, KMS-encrypted short-lived credentials, dual-control approval for prod$\rightarrow$prod.}
+
+    \resumeBlockListEnd
+
+    \resumeSubheading
+    {Alpha Nodus --- Software Development Engineer I}{Nov 2022 -- Dec 2025}
+    {Backend Systems (intern until Apr 2023, promoted in six months)}{Bengaluru, India}
+
+    \resumeBlockListStart
+
+    \resumeBlock{Pricing \& Estimation Engine}{Owned the cost-estimation service --- contract pricing, multi-party benefit coordination, overrides --- raising customer collections from \textbf{5\% to 30\%}; \textbf{877K+ estimates} at the largest customer alone.}
+
+    \resumeBlock{Partner API Connector (X12 EDI)}{Built the connector to an external approval system --- EDI $\leftrightarrow$ JSON $\leftrightarrow$ FHIR, status polling, webhooks --- cutting turnaround from \textbf{2--24 hours to under 8 seconds}.}
+
+    \resumeBlock{LLM Pipelines}{Built the AI task layer (Textract + Claude + Step Functions) that turns unstructured documents into completed downstream actions in \textbf{$\sim$30 s}, behind schema-validated outputs with retry and fallback --- $\sim$15K documents a month at the largest customer.}
+
+    \resumeBlock{Customer Integrations \& Automation}{Built the first 25+ customer integrations over vendor APIs and HL7 via Mirth Connect, plus the shared libraries; built the auto-assignment service (round-robin) and the n8n workflow integration.}
+
+    \resumeBlock{Platform \& Reliability (AWS)}{Aurora read replicas for \textbf{3.75M API calls/hour}; Redis cache cutting DB reads 80\%; zero-downtime UUID $\rightarrow$ sequential-ID migration; anomaly alarms that cut incident response 60\%.}
+
+    \resumeBlockListEnd
+
+\resumeSubHeadingListEnd
